@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>change color</title>
+    <style>
+      .coloredBox {
+        width: 300px;
+        height: 400px;
+        border: solid black 5px;
+        background-color: aqua;
+      }
+      button {
+        margin-top: 10px;
+        color: white;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="coloredBox"></div>
+    <button onclick="changecolor('blue')">Blue</button>
+    <button onclick="changecolor('orange')">Orange</button>
+    <button onclick="changecolor('lightgreen')">Green</button>
+  </body>
+  <script>
+    function changecolor(color) {
+      const colorbox = document.querySelector(".coloredBox");
+      colorbox.style.backgroundColor = color;
+    }
+  </script>
+</html>
